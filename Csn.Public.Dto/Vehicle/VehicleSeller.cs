@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using Csn.Dto.Misc;
+using Csn.Public.Dto.Misc;
 
-namespace Csn.Dto.Vehicle
+namespace Csn.Public.Dto.Vehicle
 {
     public class VehicleSeller
     {
@@ -12,7 +12,7 @@ namespace Csn.Dto.Vehicle
         public string Name { get; set; }
         public string Email { get; set; }
 
-        public Address Address { get; set; }
+        public List<Address> Addresses { get; set; }
 
         public int MaximumDeliveryDistance { get; set; }
 

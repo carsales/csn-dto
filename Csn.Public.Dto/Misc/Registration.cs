@@ -1,6 +1,6 @@
 using System;
 
-namespace Csn.Dto.Misc
+namespace Csn.Public.Dto.Misc
 {
     public class Registration
     {

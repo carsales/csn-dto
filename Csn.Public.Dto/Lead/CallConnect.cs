@@ -1,12 +1,12 @@
 ﻿using System;
 
-namespace Csn.Dto.Lead
+namespace Csn.Public.Dto.Lead
 {
     public class CallConnect
     {
         public string CallId { get; set; }
 
-        public DateTime DateCreatedUtc { get; set; }
+        public DateTime CreatedUtc { get; set; }
         public DateTime CallStartUtc { get; set; }
         public DateTime CallEndUtc { get; set; }
 

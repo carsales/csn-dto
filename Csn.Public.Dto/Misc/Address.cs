@@ -1,9 +1,11 @@
 ﻿using System.Collections.Generic;
 
-namespace Csn.Dto.Misc
+namespace Csn.Public.Dto.Misc
 {
     public class Address
     {
+        public string Type { get; set; }
+
         public string Line1 { get; set; }
         public string Line2 { get; set; }
         public string Suburb { get; set; }

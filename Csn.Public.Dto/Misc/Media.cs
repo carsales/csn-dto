@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Csn.Dto.Misc
+namespace Csn.Public.Dto.Misc
 {
     public class Media
     {

@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using Csn.Dto.Misc;
+using Csn.Public.Dto.Misc;
 
-namespace Csn.Dto.Lead
+namespace Csn.Public.Dto.Lead
 {
     public class LeadVehicle
     {
@@ -33,16 +33,5 @@ namespace Csn.Dto.Lead
         public string Group { get; set; }
         public string Category { get; set; }
         public string SubCategory { get; set; }
-    }
-
-    public class TradeInDetail
-    {
-        public string Type { get; set; } //Car,Boat,Bike
-        public string Make { get; set; }
-        public string Model { get; set; }
-        public string Year { get; set; }
-        public SimpleValue Odometer { get; set; }
-        public string Url { get; set; }
-        public string Colour { get; set; }
     }
 }

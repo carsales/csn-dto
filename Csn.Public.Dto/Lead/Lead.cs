@@ -1,17 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
-using Csn.Dto.Misc;
+using Csn.Public.Dto.Misc;
+using Csn.Public.Dto.Vehicle;
 
-namespace Csn.Dto.Lead
+namespace Csn.Public.Dto.Lead
 {
     public class Lead
     {
         public Lead()
         {
             Prospect = new Prospect();
-            TradeIn = new TradeInDetail();
             Environment = new Environment();
-            Subscription = new ProspectSubscription();
         }
 
         public Guid Identifier { get; set; }
@@ -26,17 +25,16 @@ namespace Csn.Dto.Lead
         
         public Environment Environment { get; set; }
         public Prospect Prospect { get; set; }
-        public ProspectSubscription Subscription { get; set; }
-        public TradeInDetail TradeIn { get; set; }
 
         public string Comments { get; set; }
         public DateTime Created { get; set; }       // Use UTC time or provide TZ information with date.
         public DateTime? Modified { get; set; }     // Use UTC time or provide TZ information with date.
 
-        public List<string> Tags { get; set; }
+        public List<TypeValue> Tags { get; set; }
         public CallConnect CallConnect { get; set; }
 
         public LeadVehicle Item { get; set; }
+        public LeadVehicle TradeIn { get; set; }
 
         public List<HistoryItem> History { get; set; }
         public Assignment Assignment { get; set; }
@@ -86,33 +84,18 @@ namespace Csn.Dto.Lead
         public string Email { get; set; }
         public string CompanyName { get; set; }
 
-        public Address Address { get; set; }
-        public List<Phone> PhoneNumbers { get; set; }
+        public List<Address> Addresses { get; set; }
+        public List<PhoneNumber> PhoneNumbers { get; set; }
         public ContactRequest ContactRequest { get; set; }
-        public Guid Identifier { get; set; }
-        public Guid TrackingIdentifier { get; set; }
+        public Guid? Identifier { get; set; }
+        public Guid? TrackingIdentifier { get; set; }
         public List<TypeValue> IdentificationNumbers { get; set; }
+        public List<TypeValue> Subscriptions { get; set; }
     }
 
     public class ContactRequest
     {
         public string Method { get; set; }
         public string Time { get; set; }
-    }
-
-    public class Phone
-    {
-        public string Type { get; set; }
-        public string Number { get; set; }
-        public string CountryCode { get; set; }
-    }
-
-    public class ProspectSubscription
-    {
-        public bool Newsletter { get; set; }
-        public bool FinanceQuote { get; set; }
-        public bool InsuranceQuote { get; set; }
-        public bool ConfirmResponse { get; set; }
-        public bool Survey { get; set; }
     }
 }
