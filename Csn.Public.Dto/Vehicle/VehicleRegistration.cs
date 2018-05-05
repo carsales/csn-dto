@@ -1,8 +1,8 @@
 using System;
 
-namespace Csn.Public.Dto.Misc
+namespace Csn.Public.Dto.Vehicle
 {
-    public class Registration
+    public class VehicleRegistration
     {
         public string State { get; set; }
         public string Number { get; set; }

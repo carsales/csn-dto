@@ -13,15 +13,19 @@ namespace Csn.Public.Dto.Lead
             Environment = new Environment();
         }
 
+        /* required */
         public Guid Identifier { get; set; }
-
         public string CountryCode { get; set; }
-
         public Seller Seller { get; set; }
-        public string Service { get; set; }         // Lead Service E.g. Carsales, 
-        public string Type { get; set; }            // USED, NEW, DEMO, GENERAL, GENERIC, SHOWROOM, SERVICE, FINANCE, INSURANCE
 
-        public string Status { get; set; }          // New, Contact, Commitment, Sold, Lost, Duplicate, and Unworkable  
+        /* name of the sender of the lead */
+        public string Service { get; set; }
+
+        /* Type = [USED, NEW, DEMO, GENERAL, GENERIC, SHOWROOM, SERVICE, FINANCE, INSURANCE]*/
+        public string Type { get; set; }
+
+        /* Status = [New, Contact, Commitment, Sold, Lost, Duplicate, Unworkable] */
+        public string Status { get; set; }  
         
         public Environment Environment { get; set; }
         public Prospect Prospect { get; set; }
@@ -43,9 +47,12 @@ namespace Csn.Public.Dto.Lead
 
     public class Seller
     {
-        public string Type { get; set; }            // DEALER or PRIVATE
+        /* Type = [DEALER, PRIVATE] */
+        public string Type { get; set; }
         public Guid Identifier { get; set; }
         public string Name { get; set; }
+
+        /* IdentityNumbers = [ABN, ACN etc] */
         public List<TypeValue> IdentityNumbers { get; set; }
     }
 
@@ -88,7 +95,6 @@ namespace Csn.Public.Dto.Lead
         public List<PhoneNumber> PhoneNumbers { get; set; }
         public ContactRequest ContactRequest { get; set; }
         public Guid? Identifier { get; set; }
-        public Guid? TrackingIdentifier { get; set; }
         public List<TypeValue> IdentificationNumbers { get; set; }
         public List<TypeValue> Subscriptions { get; set; }
     }

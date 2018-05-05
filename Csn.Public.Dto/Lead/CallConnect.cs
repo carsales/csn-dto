@@ -4,13 +4,17 @@ namespace Csn.Public.Dto.Lead
 {
     public class CallConnect
     {
+        public Guid? Identifier { get; set; }
         public string CallId { get; set; }
 
         public DateTime CreatedUtc { get; set; }
         public DateTime CallStartUtc { get; set; }
         public DateTime CallEndUtc { get; set; }
 
+        /* the number called */
         public string ServiceNumber { get; set; }
+
+        /* the number the call was diverted to */
         public string AnswerNumber { get; set; }
         public string CallDuration { get; set; }
         public string AnswerDuration { get; set; }

@@ -23,12 +23,12 @@ namespace Csn.Public.Dto.Vehicle
         public GeoLocation GeoLocation { get; set; }
         public List<SellerContact> Contacts { get; set; }
 
-        public List<string> Franchises { get; set; }
-        public List<string> Services { get; set; }
+        public List<NameValue> Franchises { get; set; }
+        public List<NameValue> Services { get; set; }
 
         public string Url { get; set; }
 
-        public List<string> Associations { get; set; }
+        public List<NameValue> Associations { get; set; }
     }
 
     public class SellerContact

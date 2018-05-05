@@ -12,21 +12,20 @@ namespace Csn.Public.Dto.Misc
 
     public class Photo
     {
-        public int? Id { get; set; }
-        public string PhotoPath { get; set; }
+        public Guid? Identifier { get; set; }
+        public string Type { get; set; }
+        public string Url { get; set; }
         public string Caption { get; set; }
         public string Angle { get; set; }
-        public string Type { get; set; }
         public DateTime? LastModified { get; set; }
     }
 
     public class Video
     {
-        public string ServiceName { get; set; }
-        public string VideoUrl { get; set; }
-        public string ThumbSmallUrl { get; set; }
-        public string ThumbLargeUrl { get; set; }
+        public Guid? Identifier { get; set; }
         public string Type { get; set; }
+        public string Url { get; set; }
+        public string ThumbUrl { get; set; }
         public List<VideoEncoding> Encodings { get; set; }
     }
 
@@ -40,7 +39,7 @@ namespace Csn.Public.Dto.Misc
 
     public class Link
     {
-        public string Identifier { get; set; }
+        public Guid? Identifier { get; set; }
         public string Type { get; set; }
 
         public string Name { get; set; }
