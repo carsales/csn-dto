@@ -25,7 +25,7 @@ namespace Csn.Public.Dto.Lead
 
         public List<TypeValue> IdentificationNumbers { get; set; }
         public string BodyType { get; set; }
-        public SimpleValue Odometer { get; set; }
+        public SimpleValue<double> Odometer { get; set; }
         public string FuelType { get; set; }
         public string Url { get; set; }
         public string Transmission { get; set; }
