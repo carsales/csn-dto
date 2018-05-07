@@ -15,7 +15,11 @@ namespace Csn.Public.Dto.Lead
 
         /* required */
         public Guid Identifier { get; set; }
+<<<<<<< HEAD
+=======
+
         /* ISO Short two char country codes, e.g. AU, NZ, US etc. */
+>>>>>>> Additional comments, and making SimpleValue use Generics to faciltate additional type, e.g. both int and double utilisation.
         public string CountryCode { get; set; }
         public Seller Seller { get; set; }
 

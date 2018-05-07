@@ -15,6 +15,7 @@ namespace Csn.Public.Dto.Misc
         public string Postcode { get; set; }
 
         public string Country { get; set; }
+        /* ISO Short two char country codes, e.g. AU, NZ, US etc. */
         public string CountryCode { get; set; }
     }
 

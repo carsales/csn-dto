@@ -25,23 +25,31 @@
         public int? Year { get; set; }
     }
 
-    public class SimpleValue
+    public class SimpleValue<T>
     {
-        public double Value { get; set; }
+        public T Value { get; set; }
+        /* use valid SI units of measure, e.g. KM, M. */
         public string UnitOfMeasure { get; set; }
     }
 
     public class SimpleColour
     {
-        public string Location { get; set; }            // Interior, Exterior, Bumber etc
+        /* Location = [Interior, Exterior, Bumber, etc.] */
+        public string Location { get; set; }
+        /* GenericName = [Black, Blue, Grey, White, Gold, Silver, Red, Yellow, Purple, Green, Brown] */
         public string GenericName { get; set; }
+        /* the manufacturer or friendly name */
         public string Name { get; set; }
     }
 
     public class Price
     {
+        /* Type = [RRP, EGC, IGC, WHS etc.] */
         public string Type { get; set; }
+        
         public string Location { get; set; }
+
+        /* ISO monetary units: Currency = [USD, AUD, EUR] */
         public string Currency { get; set; }
         public double? Amount { get; set; }
     }

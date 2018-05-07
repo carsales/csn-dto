@@ -10,6 +10,7 @@ namespace Csn.Public.Dto.Vehicle
         public string SpecificationSource { get; set; }
         public string SpecificationCode { get; set; }
 
+        /* ISO Short two char country codes, e.g. AU, NZ, US etc. */
         public string CountryCode { get; set; }
         public string RecordType { get; set; }
 

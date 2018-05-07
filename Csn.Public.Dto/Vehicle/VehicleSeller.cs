@@ -45,6 +45,7 @@ namespace Csn.Public.Dto.Vehicle
     {
         public string Type { get; set; }
         public string Number { get; set; }
+        /* international calling code for a country, e.g. 61 for AU, 64 for NZ. */
         public int CountryCode { get; set; }
         public int AreaCode { get; set; }
     }
