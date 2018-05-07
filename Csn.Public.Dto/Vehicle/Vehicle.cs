@@ -25,6 +25,7 @@ namespace Csn.Public.Dto.Vehicle
 
         /* SaleStatus = [Available, WithDrawn, Sold] */ 
         public string SaleStatus { get; set; }
+
         /* SaleType = [Sale, Share, Rent, Auction] */
         public string SaleType { get; set; }
 
