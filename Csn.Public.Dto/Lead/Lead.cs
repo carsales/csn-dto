@@ -32,8 +32,8 @@ namespace Csn.Public.Dto.Lead
         public Prospect Prospect { get; set; }
 
         public string Comments { get; set; }
-        public DateTime Created { get; set; }       // Use UTC time or provide TZ information with date.
-        public DateTime? Modified { get; set; }     // Use UTC time or provide TZ information with date.
+        public DateTime CreatedUtc { get; set; }
+        public DateTime? ModifiedUtc { get; set; }
 
         public List<TypeValue> Tags { get; set; }
         public CallConnect CallConnect { get; set; }
@@ -69,7 +69,7 @@ namespace Csn.Public.Dto.Lead
     {
         public Guid? Identifier { get; set; }
         public string Type { get; set; }
-        public DateTime Created { get; set; }       // UTC time or TZ info provided
+        public DateTime CreatedUtc { get; set; }
         public string Note { get; set; }
         public string Status { get; set; }
         public string Name { get; set; }
