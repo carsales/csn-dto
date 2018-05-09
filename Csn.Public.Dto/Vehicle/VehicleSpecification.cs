@@ -7,11 +7,16 @@ namespace Csn.Public.Dto.Vehicle
     public class VehicleSpecification
     {
         public Guid Identifier { get; set; }
+
+        /* The source. Redbook, Glasses, JATO etc. including CUSTOM */
         public string SpecificationSource { get; set; }
+        /* the code from the specification source, this would be a redbook code, glasses code, jato, polk etc */
         public string SpecificationCode { get; set; }
 
         /* ISO Short two char country codes, e.g. AU, NZ, US etc. */
         public string CountryCode { get; set; }
+
+        /* RecordType = [Car, Bike, MarineSail, MarineEngine, MarinePower, LightCommercial, HeavyCommercial] */
         public string RecordType { get; set; }
 
         public string Make { get; set; }
@@ -41,8 +46,8 @@ namespace Csn.Public.Dto.Vehicle
 
     public class SpecificationFeature : SpecificationAttribute
     {
+        /* Availability = [STD, OPT, AFM] */
         public string Availability { get; set; }
-        public string Fitment { get; set; }
 
         public List<SpecificationFeature> SubFeatures { get; set; }
     }
