@@ -53,7 +53,7 @@ namespace Csn.Public.Dto.Vehicle
         public SimpleDate BuildDate { get; set; }
         public VehicleWarranty Warranty { get; set; }
 
-        public List<NameValue> Services { get; set; }
+        public List<SimpleName> PublishingDestinations { get; set; }
         public List<NameValue> Tags { get; set; }
         public List<Price> PriceList { get; set; }
         public List<NameValue> ExtendedProperties { get; set; }

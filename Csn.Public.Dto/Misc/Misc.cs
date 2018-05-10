@@ -6,6 +6,11 @@
         public string Value { get; set; }
     }
 
+    public class SimpleName
+    {
+        public string Name { get; set; }
+    }
+
     public class KeyValue
     {
         public string Key { get; set; }
@@ -36,8 +41,8 @@
     {
         /* Location = [Interior, Exterior, Bumber, etc.] */
         public string Location { get; set; }
-        /* GenericName = [Black, Blue, Grey, White, Gold, Silver, Red, Yellow, Purple, Green, Brown] */
-        public string GenericName { get; set; }
+        /* Generic = [Black, Blue, Grey, White, Gold, Silver, Red, Yellow, Purple, Green, Brown] */
+        public string Generic { get; set; }
         /* the manufacturer or friendly name */
         public string Name { get; set; }
     }
