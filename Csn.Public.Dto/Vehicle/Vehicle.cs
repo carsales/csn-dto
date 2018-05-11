@@ -15,6 +15,7 @@ namespace Csn.Public.Dto.Vehicle
             Warranty = new VehicleWarranty();
             Identification = new List<TypeValue>();
             Registration = new VehicleRegistration();
+            OdometerReadings = new List<OdometerReading>();
         }
 
         public Guid Identifier { get; set; }
@@ -38,7 +39,7 @@ namespace Csn.Public.Dto.Vehicle
 
         public List<SimpleColour> Colours { get; set; }
 
-        public SimpleValue<double> Odometer { get; set; }
+        public List<OdometerReading> OdometerReadings { get; set; }
         public VehicleSeller Seller { get; set; }
 
         public VehicleSpecification Specification { get; set; }
@@ -57,5 +58,13 @@ namespace Csn.Public.Dto.Vehicle
         public List<NameValue> Tags { get; set; }
         public List<Price> PriceList { get; set; }
         public List<NameValue> ExtendedProperties { get; set; }
+    }
+
+    public class OdometerReading
+    {
+        public string Type { get; set; }
+        public DateTime? Date { get; set; }
+        public double? Value { get; set; }
+        public string UnitOfMeasure { get; set; }
     }
 }
