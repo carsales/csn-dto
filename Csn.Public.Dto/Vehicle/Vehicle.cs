@@ -19,7 +19,6 @@ namespace Csn.Public.Dto.Vehicle
         }
 
         public Guid Identifier { get; set; }
-        public string StockNumber { get; set; }
 
         /* ListingType = [New, Demo, Used] */
         public string ListingType { get; set; }
@@ -34,7 +33,7 @@ namespace Csn.Public.Dto.Vehicle
 
         public VehicleRegistration Registration { get; set; }
 
-        /* Identification Numbers = [HIN, VIN, Engine, Chassis] */
+        /* Identification Numbers = [HIN, VIN, Engine, Chassis, StockNumber] */
         public List<TypeValue> Identification { get; set; }
 
         public List<SimpleColour> Colours { get; set; }
