@@ -61,9 +61,12 @@ namespace Csn.Public.Dto.Vehicle
 
     public class OdometerReading
     {
+        /* Type = [Chassis, Hub, Engine, Engine_1, Engine_2] */
         public string Type { get; set; }
         public DateTime? Date { get; set; }
         public double? Value { get; set; }
+
+        /* UnitOfMeasure = [Km, Hour, Miles] */
         public string UnitOfMeasure { get; set; }
     }
 }
