@@ -21,16 +21,15 @@ namespace Csn.Public.Dto.Vehicle
         public GeoLocation GeoLocation { get; set; }
         public List<SellerContact> Contacts { get; set; }
 
-        public List<NameValue> Franchises { get; set; }
-        public List<NameValue> Services { get; set; }
+        public List<NameValue> Products { get; set; }
 
         public string Url { get; set; }
-
-        public List<NameValue> Associations { get; set; }
     }
 
     public class SellerContact
     {
+        /* Type = [Primary, Secondary] */
+        public string Type { get; set; }
         public string Title { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
@@ -41,6 +40,7 @@ namespace Csn.Public.Dto.Vehicle
 
     public class PhoneNumber
     {
+        /* Type = [Mobile, Home, Fax, Work] */
         public string Type { get; set; }
         public string Number { get; set; }
         /* international calling code for a country, e.g. 61 for AU, 64 for NZ. */
