@@ -13,12 +13,10 @@ namespace Csn.Public.Dto.Vehicle
         public string Email { get; set; }
 
         public List<Address> Addresses { get; set; }
-
-        public int MaximumDeliveryDistance { get; set; }
-
         public List<PhoneNumber> PhoneNumbers { get; set; }
 
-        public List<TypeValue> IdentityNumbers { get; set; }
+        /* Identification = [ABN, LMCT, ACN etc] */
+        public List<TypeValue> Identification { get; set; }
         public List<Location> Locations { get; set; }
         public GeoLocation GeoLocation { get; set; }
         public List<SellerContact> Contacts { get; set; }
