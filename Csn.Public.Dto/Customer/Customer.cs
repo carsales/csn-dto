@@ -4,7 +4,7 @@ using Csn.Public.Dto.Misc;
 
 namespace Csn.Public.Dto.Vehicle
 {
-    public class VehicleSeller
+    public class Customer
     {
         public Guid Identifier { get; set; }
         public string Type { get; set; }
@@ -19,14 +19,14 @@ namespace Csn.Public.Dto.Vehicle
         public List<TypeValue> Identification { get; set; }
         public List<Location> Locations { get; set; }
         public GeoLocation GeoLocation { get; set; }
-        public List<SellerContact> Contacts { get; set; }
+        public List<Contact> Contacts { get; set; }
 
         public List<NameValue> Products { get; set; }
 
         public string Url { get; set; }
     }
 
-    public class SellerContact
+    public class Contact
     {
         /* Type = [Primary, Secondary] */
         public string Type { get; set; }

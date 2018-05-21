@@ -46,6 +46,7 @@ namespace Csn.Public.Dto.Lead
         public List<NameValue> ExtendedProperties { get; set; }
     }
 
+    /* subset of the Customer Class */
     public class Seller
     {
         /* Type = [DEALER, PRIVATE] */

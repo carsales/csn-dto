@@ -9,7 +9,7 @@ namespace Csn.Public.Dto.Vehicle
         public Vehicle()
         {
             Specification = new VehicleSpecification();
-            Seller = new VehicleSeller();
+            Seller = new Customer();
             ComplianceDate = new SimpleDate();
             BuildDate = new SimpleDate();
             Warranty = new VehicleWarranty();
@@ -39,7 +39,7 @@ namespace Csn.Public.Dto.Vehicle
         public List<SimpleColour> Colours { get; set; }
 
         public List<OdometerReading> OdometerReadings { get; set; }
-        public VehicleSeller Seller { get; set; }
+        public Customer Seller { get; set; }
 
         public VehicleSpecification Specification { get; set; }
         public GeoLocation GeoLocation { get; set; }
