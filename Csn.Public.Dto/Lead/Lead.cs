@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using Csn.Public.Dto.Misc;
-using Csn.Public.Dto.Vehicle;
 
 namespace Csn.Public.Dto.Lead
 {

@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using Csn.Public.Dto.Misc;
 
 namespace Csn.Public.Dto.Vehicle
 {
-    public class VehicleSpecification
+    public class Specification
     {
         public Guid Identifier { get; set; }
 
