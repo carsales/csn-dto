@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Csn.Public.Dto.Misc
+namespace Csn.Public.Dto
 {
     public class Address
     {

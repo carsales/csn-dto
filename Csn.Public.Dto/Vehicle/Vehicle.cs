@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using Csn.Public.Dto.Misc;
 
 namespace Csn.Public.Dto.Vehicle
 {
@@ -8,13 +7,13 @@ namespace Csn.Public.Dto.Vehicle
     {
         public Vehicle()
         {
-            Specification = new VehicleSpecification();
-            Seller = new VehicleSeller();
+            Specification = new Specification();
+            Seller = new Customer();
             ComplianceDate = new SimpleDate();
             BuildDate = new SimpleDate();
-            Warranty = new VehicleWarranty();
+            Warranty = new Warranty();
             Identification = new List<TypeValue>();
-            Registration = new VehicleRegistration();
+            Registration = new Registration();
             OdometerReadings = new List<OdometerReading>();
         }
 
@@ -31,7 +30,7 @@ namespace Csn.Public.Dto.Vehicle
 
         public string Comment { get; set; }
 
-        public VehicleRegistration Registration { get; set; }
+        public Registration Registration { get; set; }
 
         /* Identification Numbers = [HIN, VIN, Engine, Chassis, StockNumber] */
         public List<TypeValue> Identification { get; set; }
@@ -39,9 +38,9 @@ namespace Csn.Public.Dto.Vehicle
         public List<SimpleColour> Colours { get; set; }
 
         public List<OdometerReading> OdometerReadings { get; set; }
-        public VehicleSeller Seller { get; set; }
+        public Customer Seller { get; set; }
 
-        public VehicleSpecification Specification { get; set; }
+        public Specification Specification { get; set; }
         public GeoLocation GeoLocation { get; set; }
         public Media Media { get; set; }
 
@@ -51,7 +50,7 @@ namespace Csn.Public.Dto.Vehicle
 
         public SimpleDate ComplianceDate { get; set; }
         public SimpleDate BuildDate { get; set; }
-        public VehicleWarranty Warranty { get; set; }
+        public Warranty Warranty { get; set; }
 
         public List<SimpleName> PublishingDestinations { get; set; }
         public List<NameValue> Tags { get; set; }

@@ -2,7 +2,7 @@ using System;
 
 namespace Csn.Public.Dto.Vehicle
 {
-    public class VehicleRegistration
+    public class Registration
     {
         public string State { get; set; }
         public string Number { get; set; }

@@ -2,7 +2,7 @@
 
 namespace Csn.Public.Dto.Vehicle
 {
-    public class VehicleWarranty
+    public class Warranty
     {
         public DateTime Expires { get; set; }
     }

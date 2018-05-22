@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using Csn.Public.Dto.Misc;
 using Csn.Public.Dto.Vehicle;
 
 namespace Csn.Public.Dto.Lead
@@ -21,7 +20,7 @@ namespace Csn.Public.Dto.Lead
         public SimpleDate ReleaseDate { get; set; }
         public Price Price { get; set; }
 
-        public VehicleRegistration Registration { get; set; }
+        public Registration Registration { get; set; }
         public List<SimpleColour> Colour { get; set; }
 
         public List<TypeValue> IdentificationNumbers { get; set; }
