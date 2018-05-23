@@ -18,13 +18,13 @@ namespace Csn.Public.Dto.Lead
         public string Series { get; set; }
         public string Description { get; set; }
         public SimpleDate ReleaseDate { get; set; }
-        public Price Price { get; set; }
+        public Price VehiclePrice { get; set; }
 
         public Registration Registration { get; set; }
         public List<SimpleColour> Colour { get; set; }
 
         public List<TypeValue> IdentificationNumbers { get; set; }
-        public SimpleValue<double> Odometer { get; set; }
+        public SimpleValue<double> OdometerReading { get; set; }
 
         public string BodyType { get; set; }
         public string FuelType { get; set; }
