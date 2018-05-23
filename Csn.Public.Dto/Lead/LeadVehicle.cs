@@ -21,7 +21,7 @@ namespace Csn.Public.Dto.Lead
         public Price VehiclePrice { get; set; }
 
         public Registration Registration { get; set; }
-        public List<SimpleColour> Colour { get; set; }
+        public List<SimpleColour> Colours { get; set; }
 
         public List<TypeValue> IdentificationNumbers { get; set; }
         public SimpleValue<double> OdometerReading { get; set; }
