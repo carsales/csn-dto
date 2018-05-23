@@ -33,7 +33,7 @@ namespace Csn.Public.Dto.Lead
         public DateTime CreatedUtc { get; set; }
         public DateTime? ModifiedUtc { get; set; }
 
-        public List<TypeValue> Tags { get; set; }
+        public List<TypeValue> Labels { get; set; }
         public CallConnect CallConnect { get; set; }
 
         public LeadVehicle Item { get; set; }
