@@ -14,7 +14,7 @@ namespace Csn.Public.Dto
     {
         public Guid? Identifier { get; set; }
         public string Type { get; set; }
-        public string Url { get; set; }
+        public string Path { get; set; }
         public string Caption { get; set; }
         public string Angle { get; set; }
         public DateTime? LastModified { get; set; }
