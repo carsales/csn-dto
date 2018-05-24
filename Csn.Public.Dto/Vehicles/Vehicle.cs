@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using Csn.Public.Dto.Customers;
 
-namespace Csn.Public.Dto.Vehicle
+namespace Csn.Public.Dto.Vehicles
 {
     public class Vehicle
     {

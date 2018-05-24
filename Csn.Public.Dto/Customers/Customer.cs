@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Csn.Public.Dto
+namespace Csn.Public.Dto.Customers
 {
     public class Customer
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Csn.Public.Dto.Vehicle
+namespace Csn.Public.Dto.Vehicles
 {
     public class Specification
     {

@@ -1,6 +1,6 @@
 using System;
 
-namespace Csn.Public.Dto.Vehicle
+namespace Csn.Public.Dto.Vehicles
 {
     public class Registration
     {
