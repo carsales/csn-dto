@@ -7,7 +7,7 @@ namespace Csn.Public.Dto.Lead
     {
         public Lead()
         {
-            Prospect = new Prospect();
+            Prospect = new Customer();
             Environment = new Environment();
         }
 
@@ -15,7 +15,7 @@ namespace Csn.Public.Dto.Lead
         public Guid Identifier { get; set; }
         /* ISO Short two char country codes, e.g. AU, NZ, US etc. */
         public string CountryCode { get; set; }
-        public Seller Seller { get; set; }
+        public Customer Seller { get; set; }
 
         /* name of the sender of the lead */
         public string Service { get; set; }
@@ -27,7 +27,7 @@ namespace Csn.Public.Dto.Lead
         public string Status { get; set; }  
         
         public Environment Environment { get; set; }
-        public Prospect Prospect { get; set; }
+        public Customer Prospect { get; set; }
 
         public string Comments { get; set; }
         public DateTime CreatedUtc { get; set; }
@@ -36,24 +36,13 @@ namespace Csn.Public.Dto.Lead
         public List<TypeValue> Labels { get; set; }
         public CallConnect CallConnect { get; set; }
 
-        public LeadVehicle Item { get; set; }
-        public LeadVehicle TradeIn { get; set; }
+        public List<Vehicle.Vehicle> Items { get; set; }
+        public Vehicle.Vehicle TradeIn { get; set; }
 
         public List<HistoryItem> History { get; set; }
         public Assignment Assignment { get; set; }
         public List<NameValue> ExtendedProperties { get; set; }
-    }
-
-    /* subset of the Customer Class */
-    public class Seller
-    {
-        /* Type = [DEALER, PRIVATE] */
-        public string Type { get; set; }
-        public Guid Identifier { get; set; }
-        public string Name { get; set; }
-
-        /* IdentityNumbers = [ABN, ACN etc] */
-        public List<TypeValue> IdentityNumbers { get; set; }
+        public List<TypeValue> Subscriptions { get; set; }
     }
 
     public class Assignment
@@ -96,7 +85,6 @@ namespace Csn.Public.Dto.Lead
         public ContactRequest ContactRequest { get; set; }
         public Guid? Identifier { get; set; }
         public List<TypeValue> IdentificationNumbers { get; set; }
-        public List<TypeValue> Subscriptions { get; set; }
     }
 
     public class ContactRequest
