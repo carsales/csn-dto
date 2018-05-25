@@ -50,7 +50,7 @@ namespace Csn.Public.Dto
         public Guid? Identifier { get; set; }
         public string Email { get; set; }
         public string Name { get; set; }
-        public DateTime AssignedUTC { get; set; }
+        public DateTime AssignedUtc { get; set; }
     }
 
     public class HistoryItem
