@@ -23,6 +23,8 @@ namespace Csn.Public.Dto
         public List<NameValue> Products { get; set; }
 
         public string Url { get; set; }
+
+        public List<TypeValue> Subscriptions { get; set; }
     }
 
     public class Contact

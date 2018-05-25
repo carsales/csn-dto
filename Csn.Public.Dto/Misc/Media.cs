@@ -17,7 +17,7 @@ namespace Csn.Public.Dto
         public string Path { get; set; }
         public string Caption { get; set; }
         public string Angle { get; set; }
-        public DateTime? LastModified { get; set; }
+        public DateTime? LastModifiedUTC { get; set; }
     }
 
     public class Video
@@ -47,7 +47,7 @@ namespace Csn.Public.Dto
         public string Caption { get; set; }
         public string Url { get; set; }
         public string ThumbUrl { get; set; }
-        public DateTime ExpiryDate { get; set; }
-        public DateTime IssueDate { get; set; }
+        public DateTime ExpiryDateUTC { get; set; }
+        public DateTime IssueDateUTC { get; set; }
     }
 }

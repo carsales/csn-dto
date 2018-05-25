@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Csn.Public.Dto.Lead
+namespace Csn.Public.Dto
 {
     public class Lead
     {
@@ -34,15 +34,15 @@ namespace Csn.Public.Dto.Lead
         public DateTime? ModifiedUtc { get; set; }
 
         public List<TypeValue> Labels { get; set; }
+        public List<TypeValue> ServiceRequests { get; set; }
         public CallConnect CallConnect { get; set; }
 
-        public List<Vehicle.Vehicle> Items { get; set; }
-        public Vehicle.Vehicle TradeIn { get; set; }
+        public Vehicle Item { get; set; }
+        public Vehicle TradeIn { get; set; }
 
         public List<HistoryItem> History { get; set; }
         public Assignment Assignment { get; set; }
         public List<NameValue> ExtendedProperties { get; set; }
-        public List<TypeValue> Subscriptions { get; set; }
     }
 
     public class Assignment
@@ -50,7 +50,7 @@ namespace Csn.Public.Dto.Lead
         public Guid? Identifier { get; set; }
         public string Email { get; set; }
         public string Name { get; set; }
-        public DateTime Assigned { get; set; }
+        public DateTime AssignedUTC { get; set; }
     }
 
     public class HistoryItem
@@ -70,26 +70,5 @@ namespace Csn.Public.Dto.Lead
         public string Url { get; set; }
         public string IpAddress { get; set; }
         public string SessionId { get; set; }
-    }
-
-    public class Prospect
-    {
-        public string Title { get; set; }
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public string Email { get; set; }
-        public string CompanyName { get; set; }
-
-        public List<Address> Addresses { get; set; }
-        public List<PhoneNumber> PhoneNumbers { get; set; }
-        public ContactRequest ContactRequest { get; set; }
-        public Guid? Identifier { get; set; }
-        public List<TypeValue> IdentificationNumbers { get; set; }
-    }
-
-    public class ContactRequest
-    {
-        public string Method { get; set; }
-        public string Time { get; set; }
     }
 }
