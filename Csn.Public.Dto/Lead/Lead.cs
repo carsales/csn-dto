@@ -35,7 +35,7 @@ namespace Csn.Public.Dto
 
         public List<TypeValue> Labels { get; set; }
         public List<TypeValue> ServiceRequests { get; set; }
-        public CallConnect CallConnect { get; set; }
+        public TelephoneCall PhoneCall { get; set; }
 
         public Vehicle Item { get; set; }
         public Vehicle TradeIn { get; set; }
