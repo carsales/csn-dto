@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Csn.Public.Dto.Lead
+namespace Csn.Public.Dto
 {
     public class CallConnect
     {
