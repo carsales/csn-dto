@@ -17,8 +17,8 @@ namespace Csn.Public.Dto
         public string CountryCode { get; set; }
         public Customer Seller { get; set; }
 
-        /* name of the sender of the lead */
-        public string Service { get; set; }
+        /* name provided for the system sending the lead */
+        public string Source { get; set; }
 
         /* Type = [USED, NEW, DEMO, GENERAL, GENERIC, SHOWROOM, SERVICE, FINANCE, INSURANCE]*/
         public string Type { get; set; }
@@ -33,8 +33,16 @@ namespace Csn.Public.Dto
         public DateTime CreatedUtc { get; set; }
         public DateTime? ModifiedUtc { get; set; }
 
+        /*
+            Labels is replacing Tags, and provides a means to add labels of various types
+            Type = [Private, System, Device, User]
+            Value is used to denote the actual label itself.
+        */
         public List<TypeValue> Labels { get; set; }
+
+        /* ServiceRequest.Type = [Finance, Insurance etc] */
         public List<TypeValue> ServiceRequests { get; set; }
+
         public TelephoneCall PhoneCall { get; set; }
 
         public Vehicle Item { get; set; }
