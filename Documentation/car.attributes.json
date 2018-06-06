@@ -295,24 +295,14 @@
     "UnitOfMeasure": ""
   },
   {
-    "Name": "LoadSpaceMinLitres",
+    "Name": "LoadSpaceMin",
     "Description": "",
     "UnitOfMeasure": "L"
   },
   {
-    "Name": "LoadSpaceMaxLitres",
+    "Name": "LoadSpaceMax",
     "Description": "",
     "UnitOfMeasure": "L"
-  },
-  {
-    "Name": "LoadSpaceMinCubicMetres",
-    "Description": "",
-    "UnitOfMeasure": "M3"
-  },
-  {
-    "Name": "LoadSpaceMaxCubicMetres",
-    "Description": "",
-    "UnitOfMeasure": "M3"
   },
   {
     "Name": "LaunchYear",
