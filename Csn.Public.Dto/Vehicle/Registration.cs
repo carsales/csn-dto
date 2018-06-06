@@ -6,8 +6,8 @@ namespace Csn.Public.Dto
     {
         public string State { get; set; }
         public string Number { get; set; }
-        public DateTime ExpiresUtc { get; set; }
-        public DateTime FirstRegisteredUtc { get; set; }
+        public DateTime? ExpiresUtc { get; set; }
+        public DateTime? FirstRegisteredUtc { get; set; }
         public int? OwnerCount { get; set; }
     }
 }
