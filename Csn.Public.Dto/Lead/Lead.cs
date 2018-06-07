@@ -17,7 +17,7 @@ namespace Csn.Public.Dto
         public string CountryCode { get; set; }
         public Customer Seller { get; set; }
 
-        /* name provided for the system sending the lead */
+        /* coded name provided for the company sending the lead e.g. CARSALES */
         public string Source { get; set; }
 
         /* Type = [USED, NEW, DEMO, GENERAL, GENERIC, SHOWROOM, SERVICE, FINANCE, INSURANCE]*/
@@ -74,9 +74,16 @@ namespace Csn.Public.Dto
 
     public class Environment
     {
+        /* location name of where the lead was submitted from */
         public string Source { get; set; }
+
+        /* domain name of the site sending the lead */
         public string Url { get; set; }
+
+        /* IP address of the users device submitting the lead - helpful in tracking spam etc. */
         public string IpAddress { get; set; }
+
+        /* an identifier of the session for the user submitting the lead - assists with lead tracking */
         public string SessionId { get; set; }
     }
 }
