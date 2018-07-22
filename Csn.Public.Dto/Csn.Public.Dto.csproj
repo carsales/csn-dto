@@ -7,8 +7,6 @@
     <PackageLicenseUrl>https://raw.githubusercontent.com/carsales/csn-dto/master/LICENSE</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/carsales/csn-dto</PackageProjectUrl>
     <RepositoryUrl>https://github.com/carsales/csn-dto</RepositoryUrl>
-    <Version Condition=" '$(VERSION)' == '' ">1.0.1-local</Version>
-    <Version Condition=" '$(VERSION)' != '' ">$(VERSION)</Version>
 
     <Description>Basic set of data transfer objects (DTO) for use within the automotive industry for API enablement</Description>
     <Copyright>Copyright © carsales.com Limited 2018</Copyright>
