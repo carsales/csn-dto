@@ -56,6 +56,7 @@ namespace Csn.Public.Dto
         public List<NameValue> Tags { get; set; }
         public List<Price> PriceList { get; set; }
         public List<NameValue> ExtendedProperties { get; set; }
+        public List<TypeName> Certifications { get; set; }
     }
 
     public class OdometerReading
