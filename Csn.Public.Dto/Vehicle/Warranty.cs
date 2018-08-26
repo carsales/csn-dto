@@ -4,6 +4,6 @@ namespace Csn.Public.Dto
 {
     public class Warranty
     {
-        public DateTime ExpiresUtc { get; set; }
+        public DateTime? ExpiresUtc { get; set; }
     }
 }
