@@ -23,6 +23,12 @@
         public string Value { get; set; }
     }
 
+    public class TypeName
+    {
+        public string Type { get; set; }
+        public string Name { get; set; }
+    }
+
     public class SimpleDate
     {
         public int? Day { get; set; }
