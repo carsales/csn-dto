@@ -17,7 +17,7 @@ namespace Csn.Public.Dto
             OdometerReadings = new List<OdometerReading>();
         }
 
-        /* Type = [Car, Bike, Boat, Truck, Caravan, Equipment, Construction, Agriculture, Recreation, Industry] */
+        /* Type = [Car, Bike, Boat, Truck, Caravan, Construction, Agriculture] */
         public string Type { get; set; }
 
         public Guid Identifier { get; set; }
