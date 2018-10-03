@@ -22,7 +22,11 @@ namespace Csn.Public.Dto
 
         public Guid Identifier { get; set; }
 
-        /* ListingType = [New, Demo, Used] */
+        /* 
+            ListingType = [Showroom, New, Demo, Used]
+
+            "New" means the item is in-stock. 
+        */
         public string ListingType { get; set; }
 
         /* SaleStatus = [Available, WithDrawn, Sold] */ 

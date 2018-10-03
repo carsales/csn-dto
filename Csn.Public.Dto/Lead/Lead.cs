@@ -20,7 +20,13 @@ namespace Csn.Public.Dto
         /* coded name provided for the company sending the lead e.g. CARSALES */
         public string Source { get; set; }
 
-        /* Type = [USED, NEW, DEMO, GENERAL, GENERIC, SHOWROOM, SERVICE, FINANCE, INSURANCE]*/
+        /* 
+            Type = [GENERAL, ITEM] 
+            
+            Should it be expected to have an item attached (ITEM) or not (GENERAL). 
+            Note that ServiceRequests handle what services are being enquired on e.g. finance, insurance, service, sales etc.
+            Item.ListingType handles whether the item is new, used or demo etc.
+        */
         public string Type { get; set; }
 
         /* Status = [New, Contact, Commitment, Sold, Lost, Duplicate, Unworkable] */
