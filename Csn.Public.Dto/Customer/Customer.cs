@@ -25,6 +25,8 @@ namespace Csn.Public.Dto
         public string Url { get; set; }
 
         public List<TypeValue> Subscriptions { get; set; }
+        public BusinessHours BusinessHours { get; set; }
+        public List<NameValue> Configuration { get; set; }
     }
 
     public class Contact
@@ -48,4 +50,29 @@ namespace Csn.Public.Dto
         public int CountryCode { get; set; }
         public int AreaCode { get; set; }
     }
+
+
+    public class BusinessHours
+    {
+        public List<OpeningHours> Hours { get; set; }
+        public List<AlternateDay> AlternateDays { get; set; }
+    }
+    public class AlternateDay
+    {
+        /* Comments = [Fixed dates e.g. "New Years Day" simply set Day and Month, otherwise set the full date] */
+        public SimpleDate Date { get; set; }
+        public OpeningHours Hours { get; set; }
+    }
+
+    public class OpeningHours
+    {
+        /* Comments = ["Monday", "Tuesday", etc] */
+        public string DayOfWeek { get; set; }
+        public string Open { get; set; }
+        public string Close { get; set; }
+        public bool? Closed { get; set; }
+        /* Comments = ["By appointment only", "New Years Day", etc.] */
+        public string Comments { get; set; }
+    }
+
 }
