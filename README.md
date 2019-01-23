@@ -3,22 +3,21 @@
 An standardised format for transfer of data within the automotive industry globally. This is developed and in use by carsales.com Limited and its local and international entities.
 
 There are four main classes.
-1. *Customer* (aka Seller / Dealer / User): Describes the entity associated with the business. This could be a private seller, a dealer, an OEM or any other business / legal entity.
-2. *Vehicle*: Specific details of the automotive inventory item - this is a specific item in existing, e.g. identified by VIN or HIN.
-3. *Specification*: Describes the specifics of various automotive variants, including: Make, Model, Year and other details.
-4. *Lead*: Details of an individual enquiry.  
+1. **Customer** (aka Seller / Dealer / User): Describes the entity associated with the business. This could be a private seller, a dealer, an OEM or any other business / legal entity.
+2. **Vehicle**: Specific details of the automotive inventory item - this is a specific item in existing, e.g. identified by VIN or HIN.
+3. **Specification**: Describes the specifics of various automotive variants, including: Make, Model, Year and other details.
+4. **Lead**: Details of an individual enquiry.  
 
 
 ## DATA TRANSFER OPTIONS
 
 The content transferred should be in an industry standard format e.g. JSON, XML or CSV.
 
-#### Special case for CSV:
-```
-In the specific case of CSV the file should include a header row, where the column name is the property name, including parent properties names (separated by a period: ".") where applicable to ensure uniqueness e.g. a lead can have two name properties, therefore the columns should be called: Prospect.Name,Seller.Name
-
-The processing of CSV files should honour the column names, such that optional fields may be added or removed, and column order / position is not fixed and can be changed without either affecting processing. Carriage returns, line feeds and quotation marks should be escaped e.g. \r\n and \", and text should be enclosed in quotation marks (mandatory if the text for a field contains a comma).
-```
+> Special case for CSV: 
+>
+> The CSV file should **always** include a header row, where the column name is the property name, including parent properties names (separated by a period: ".") where applicable to ensure uniqueness e.g. a lead can have two *Name* properties, therefore the columns should be called: *Prospect.Name*,*Seller.Name*
+>
+> The processing of CSV files should honour the column names provided, such that optional fields may be added or removed, and column order / position is not fixed and can be changed, without affecting processing. Carriage returns, line feeds and quotation marks should be escaped e.g. \r\n and \", and text should be enclosed in quotation marks (mandatory if the text for a field contains a comma).
 
 ### The mechanism for transferring content includes:
 
@@ -29,14 +28,14 @@ Using the standard web based technology as a webhook. A webhook in this instance
 There is no standard on the returned content in the body of the response from the web hook. The success or failure of the call should rely on the HTTP response codes. Systems should take action based on the following response codes:
  - 2xx - is considered accepted and no further action should be taken.
  - 3xx - is honoured, and any redirection should be followed.
- - 4xx - means a permanent failure, and a system should *NOT* retry.
+ - 4xx - means a permanent failure, and a system should **NOT** retry.
  - 5xx - is a temporary failure and a system should resend the data after waiting an agreed period of time.
 
-Authorisation of the HTTP POST should occur if desired based on the entity *sending* the data, and *not* the entity the data relates to. Mechanisms include specific custom (fixed) headers or query string (fixed) parameters. 
+Authorisation of the HTTP POST should occur if desired based on the entity **sending** the data, and **not** the entity the data relates to. Mechanisms include specific custom (fixed) headers or query string (fixed) parameters. 
 
 #### 2. FTP
 
-The content is stored in a file and transmitted using File Transfer Protocol (FTP). There should be no variability in the path details except for the data type (i.e. vehicle, lead, customer or specification) required to submit the file. Authorisation should be based on the entity *sending* the data and *not* the entity the data relates to.
+The content is stored in a file and transmitted using File Transfer Protocol (FTP). There should be no variability in the path details except for the data type (i.e. vehicle, lead, customer or specification) required to submit the file. Authorisation should be based on the entity **sending** the data and **not** the entity the data relates to.
 
 In the case where the file relates to a single item, e.g. a vehicle or seller, then the file name should be the unique identifier for that item with the content type, in short form, as the file extension e.g. 42539cf0-009e-408f-8b6a-630f3d2e58dc.json where 42539cf0-009e-408f-8b6a-630f3d2e58dc is the unique identifier for that item, and the content will be json describing that item.
 
