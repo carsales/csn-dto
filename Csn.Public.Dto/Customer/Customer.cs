@@ -18,6 +18,9 @@ namespace Csn.Public.Dto
         public List<TypeValue> Identification { get; set; }
         public List<Location> Locations { get; set; }
         public GeoLocation GeoLocation { get; set; }
+        
+        /* TimeZone = tz standard https://www.iana.org/time-zones as used in nodatime.org*/
+        public string TimeZone { get; set; }
         public List<Contact> Contacts { get; set; }
 
         public List<NameValue> Products { get; set; }
@@ -25,7 +28,7 @@ namespace Csn.Public.Dto
         public string Url { get; set; }
 
         public List<TypeValue> Subscriptions { get; set; }
-        public BusinessHours BusinessHours { get; set; }
+        public List<Period> OperatingHours { get; set; }
         public List<NameValue> Configuration { get; set; }
     }
 
@@ -51,28 +54,23 @@ namespace Csn.Public.Dto
         public int AreaCode { get; set; }
     }
 
-
-    public class BusinessHours
+    public class Period
     {
-        public List<OpeningHours> Hours { get; set; }
-        public List<AlternateDay> AlternateDays { get; set; }
-    }
-    public class AlternateDay
-    {
-        /* SimpleDate = [Fixed dates e.g. "New Years Day" simply set Day and Month, otherwise set the full date] */
+        /* Day = [WeekDays, Weekend, Public Holidays, Monday, New Years Day, Good Friday... etc] */
+        public string Day { get; set; }
+        /* Date = [Special Days e.g. "New Years Day" simply set Day and Month, otherwise set the full date] */
         public SimpleDate Date { get; set; }
-        public OpeningHours Hours { get; set; }
-    }
-
-    public class OpeningHours
-    {
-        /* DayOfWeek = ["Monday", "Tuesday", etc] */
-        public string DayOfWeek { get; set; }
-        public string Open { get; set; }
-        public string Close { get; set; }
-        public bool? Closed { get; set; }
+        public TimeOfDay Open { get; set; }
+        public TimeOfDay Close { get; set; }
         /* Comments = ["By appointment only", "New Years Day", etc.] */
         public string Comments { get; set; }
+    }
+
+    public class TimeOfDay 
+    {
+        /* Time = 24 hour time notation. e.g. 1630 */
+        public string Time { get; set; }
+        public bool AllDay { get; set; }
     }
 
 }
