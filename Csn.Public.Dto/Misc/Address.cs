@@ -29,5 +29,7 @@ namespace Csn.Public.Dto
     {
         public double Latitude { get; set; }
         public double Longitude { get; set; }
+        /* tz standard TimeZone https://www.iana.org/time-zones as used in nodatime.org*/
+        public string TimeZone { get; set; }
     }
 }

@@ -59,14 +59,14 @@ namespace Csn.Public.Dto
     }
     public class AlternateDay
     {
-        /* Comments = [Fixed dates e.g. "New Years Day" simply set Day and Month, otherwise set the full date] */
+        /* SimpleDate = [Fixed dates e.g. "New Years Day" simply set Day and Month, otherwise set the full date] */
         public SimpleDate Date { get; set; }
         public OpeningHours Hours { get; set; }
     }
 
     public class OpeningHours
     {
-        /* Comments = ["Monday", "Tuesday", etc] */
+        /* DayOfWeek = ["Monday", "Tuesday", etc] */
         public string DayOfWeek { get; set; }
         public string Open { get; set; }
         public string Close { get; set; }
