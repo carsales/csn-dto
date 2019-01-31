@@ -6,6 +6,10 @@ namespace Csn.Public.Dto
     public class Customer
     {
         public Guid Identifier { get; set; }
+
+        /* Guid for the organisation that owns this customer */
+        public Guid? OwnerIdentifier { get; set; }
+
         public string Type { get; set; }
 
         public string Name { get; set; }
@@ -68,8 +72,9 @@ namespace Csn.Public.Dto
 
     public class TimeOfDay 
     {
-        /* Time = 24 hour time notation. e.g. 1630 */
-        public string Time { get; set; }
+        /* Time = 24 hour time notation for hours, e.g. 16 for 4pm */
+        public byte Hour { get; set; }
+        public byte Minute { get; set; }
         public bool AllDay { get; set; }
     }
 
