@@ -6,6 +6,10 @@ namespace Csn.Public.Dto
     public class Customer
     {
         public Guid Identifier { get; set; }
+
+        /* Guid for the organisation that owns this customer */
+        public Guid? OwnerIdentifier { get; set; }
+
         public string Type { get; set; }
 
         public string Name { get; set; }
@@ -18,6 +22,9 @@ namespace Csn.Public.Dto
         public List<TypeValue> Identification { get; set; }
         public List<Location> Locations { get; set; }
         public GeoLocation GeoLocation { get; set; }
+        
+        /* TimeZone = tz standard https://www.iana.org/time-zones as used in nodatime.org*/
+        public string TimeZone { get; set; }
         public List<Contact> Contacts { get; set; }
 
         public List<NameValue> Products { get; set; }
@@ -25,6 +32,8 @@ namespace Csn.Public.Dto
         public string Url { get; set; }
 
         public List<TypeValue> Subscriptions { get; set; }
+        public List<Period> OperatingHours { get; set; }
+        public List<NameValue> Configuration { get; set; }
     }
 
     public class Contact
@@ -48,4 +57,25 @@ namespace Csn.Public.Dto
         public int CountryCode { get; set; }
         public int AreaCode { get; set; }
     }
+
+    public class Period
+    {
+        /* Day = [WeekDays, Weekend, Public Holidays, Monday, New Years Day, Good Friday... etc] */
+        public string Day { get; set; }
+        /* Date = [Special Days e.g. "New Years Day" simply set Day and Month, otherwise set the full date] */
+        public SimpleDate Date { get; set; }
+        public TimeOfDay Open { get; set; }
+        public TimeOfDay Close { get; set; }
+        /* Comments = ["By appointment only", "New Years Day", etc.] */
+        public string Comments { get; set; }
+    }
+
+    public class TimeOfDay 
+    {
+        /* Time = 24 hour time notation for hours, e.g. 16 for 4pm */
+        public byte Hour { get; set; }
+        public byte Minute { get; set; }
+        public bool AllDay { get; set; }
+    }
+
 }
