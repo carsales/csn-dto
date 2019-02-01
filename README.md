@@ -4,7 +4,7 @@ An standardised format for transfer of data within the automotive industry globa
 
 There are four main classes.
 1. **Customer** (aka Seller / Dealer / User): Describes the entity associated with the business. This could be a private seller, a dealer, an OEM or any other business / legal entity.
-2. **Vehicle**: Specific details of the automotive inventory item - this is a specific item in existing, e.g. identified by VIN or HIN.
+2. **Vehicle**: Specific details of the automotive inventory item - this is a specific item, e.g. identified by VIN or HIN and must be related to a *Customer*, and have a *Specification*.
 3. **Specification**: Describes the specifics of various automotive variants, including: Make, Model, Year and other details.
 4. **Lead**: Details of an individual enquiry.  
 
