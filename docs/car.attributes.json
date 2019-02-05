@@ -1,0 +1,322 @@
+[
+  {
+    "Name": "AirPollutionRating",
+    "Description": "The vehicle's Air Pollution rating (1-10). refer http://www.greenvehicleguide.gov.au/",
+    "UnitOfMeasure": ""
+  },
+  {
+    "Name": "ANCAPRating",
+    "Description": "The ANCAP Safety Rating. Values from 1 to 5.",
+    "UnitOfMeasure": ""
+  },
+  {
+    "Name": "Badge",
+    "Description": "The Badge description of the vehicle Eg EXECUTIVE",
+    "UnitOfMeasure": ""
+  },
+  {
+    "Name": "BodyConfiguration",
+    "Description": "The Body Configuration description of the vehicle. Eg: DAY=Day Cab, DUAL=Dual Cab, HCUB=Hi Cube, NARW=Narrow Cab",
+    "UnitOfMeasure": ""
+  },
+  {
+    "Name": "BodyStyle",
+    "Description": "The Body Style description of the vehicle. Eg:BC=Bus Chassis,BDB=B-double,BUS=Bus,CAB=Cabriolet,CC=Cab ",
+    "UnitOfMeasure": ""
+  },
+  {
+    "Name": "CountryOrigin",
+    "Description": "The Country of Origin description of the vehicle Eg Germany, Japan",
+    "UnitOfMeasure": ""
+  },
+  {
+    "Name": "Cylinders",
+    "Description": "Number of cylinders or rotors",
+    "UnitOfMeasure": ""
+  },
+  {
+    "Name": "DoorNumber",
+    "Description": "Number of doors not including the boot",
+    "UnitOfMeasure": ""
+  },
+  {
+    "Name": "Drive",
+    "Description": "The Drive description of the vehicle. Eg: 4X4, 4X4 Constant, 4X4 Dual Range, 4X4 On Demand, 6X2, 6X4, 6X6, 8X4, 8X8, ",
+    "UnitOfMeasure": ""
+  },
+  {
+    "Name": "EmissionStandard",
+    "Description": "Which Emission standard this vehicle complies to. Eg: EU2=Euro 2, EU3=Euro 3, EU$=Euro 4, EU5=Euro 5",
+    "UnitOfMeasure": ""
+  },
+  {
+    "Name": "EngineCode",
+    "Description": "Manufacturer's engine code. ",
+    "UnitOfMeasure": ""
+  },
+  {
+    "Name": "EngineCycle",
+    "Description": "The Engine Cycle description of the vehicle Eg 2 Stroke, 4 Stroke",
+    "UnitOfMeasure": ""
+  },
+  {
+    "Name": "EngineDescription",
+    "Description": "The common engine reference name, blank if there is no common name Eg 3.4",
+    "UnitOfMeasure": ""
+  },
+  {
+    "Name": "EngineLocation",
+    "Description": "The location of the engine. Eg: E=Mid-Rear, F=Front, M=Mid-Front, R=Rear",
+    "UnitOfMeasure": ""
+  },
+  {
+    "Name": "EngineNumber",
+    "Description": "",
+    "UnitOfMeasure": ""
+  },
+  {
+    "Name": "EngineSize",
+    "Description": "The engine capacity in cc's eg 3387",
+    "UnitOfMeasure": "cc"
+  },
+  {
+    "Name": "EngineType",
+    "Description": "The Engine Type description of the vehicle. Eg: E=Electric, P=Piston, PE=Piston - Electric, R=Rotary",
+    "UnitOfMeasure": ""
+  },
+  {
+    "Name": "FuelCapacity",
+    "Description": "The Fuel tank capacity in litres",
+    "UnitOfMeasure": "L"
+  },
+  {
+    "Name": "FuelCity",
+    "Description": "The Urban fuel consumption measured in litres per 100km",
+    "UnitOfMeasure": "L/100km"
+  },
+  {
+    "Name": "FuelCombined",
+    "Description": "The Combined fuel consumption measured in litres per 100km",
+    "UnitOfMeasure": "L/100km"
+  },
+  {
+    "Name": "FuelDelivery",
+    "Description": "The Fuel Delivery description of the vehicle. Eg: C=Carburettor Single, CM=Carburettor Multiple, ",
+    "UnitOfMeasure": ""
+  },
+  {
+    "Name": "FuelHighway",
+    "Description": "The Extra-Urban fuel consumption measured in litres per 100km",
+    "UnitOfMeasure": "L/100km"
+  },
+  {
+    "Name": "FuelType",
+    "Description": "The Fuel Type description of the vehicle.  Eg: A=Petrol or LPG (Dual), D=Diesel, E=Electric, G=LPG only, O=Petrol - Premium ULP, P=Petrol",
+    "UnitOfMeasure": ""
+  },
+  {
+    "Name": "GearNumber",
+    "Description": "The number of Gears on the vehicle",
+    "UnitOfMeasure": ""
+  },
+  {
+    "Name": "GearType",
+    "Description": "The Gear Type description of the vehicle. Eg; A=Automatic, AO=Automatic Overdrive, DS=Seq. Manual Auto-Dual Clutch, M=Manual",
+    "UnitOfMeasure": ""
+  },
+  {
+    "Name": "GreenhouseRating",
+    "Description": "The vehicle's Greenhouse rating (1-10) based on CO2 emissions. refer http://www.greenvehicleguide.gov.au/",
+    "UnitOfMeasure": ""
+  },
+  {
+    "Name": "GrossCombinationMass",
+    "Description": "The total of the gross weight and braked towing capacity (kg)",
+    "UnitOfMeasure": "kg"
+  },
+  {
+    "Name": "GrossVehicleMass",
+    "Description": "The maximum laden mass of a motor vehicle as specified by the Manufacturer (kg)",
+    "UnitOfMeasure": "kg"
+  },
+  {
+    "Name": "Induction",
+    "Description": "The Induction description of the vehicle Eg A=Aspirated, S=Supercharged, TSI=Turbo Supercharged Intercooled, TTI=Twin Turbo Intercooled",
+    "UnitOfMeasure": ""
+  },
+  {
+    "Name": "KerbWeight",
+    "Description": "The weight of the vehicle with standard equipment unoccupied and unladen with all fluid reservoirs full (kg)",
+    "UnitOfMeasure": "kg"
+  },
+  {
+    "Name": "LoadHeight",
+    "Description": "",
+    "UnitOfMeasure": "mm"
+  },
+  {
+    "Name": "LoadLength",
+    "Description": "",
+    "UnitOfMeasure": "mm"
+  },
+  {
+    "Name": "LoadSpace",
+    "Description": "",
+    "UnitOfMeasure": "m3"
+  },
+  {
+    "Name": "LoadWidth",
+    "Description": "",
+    "UnitOfMeasure": "mm"
+  },
+  {
+    "Name": "ModelCode",
+    "Description": "Manufacturer's model code",
+    "UnitOfMeasure": ""
+  },
+  {
+    "Name": "ModelYear",
+    "Description": "The year in which the vehicle was manufacturered/assembled.",
+    "UnitOfMeasure": ""
+  },
+  {
+    "Name": "OverallGreenStarRating",
+    "Description": "The vehicle's overall rating (1-5) based on the sum of the air pollution and greenhouse ratings. refer http://www.greenvehicleguide.gov.au/",
+    "UnitOfMeasure": ""
+  },
+  {
+    "Name": "RimMaterial",
+    "Description": "The material of the rim. Eg: Alloy or Steel",
+    "UnitOfMeasure": ""
+  },
+  {
+    "Name": "RonRating",
+    "Description": "The recommended fuel RON rating",
+    "UnitOfMeasure": ""
+  },
+  {
+    "Name": "Roofline",
+    "Description": "Description of roof style, primarily for wagons and vans, ie: low roof, high roof",
+    "UnitOfMeasure": ""
+  },
+  {
+    "Name": "SeatCapacity",
+    "Description": "The number of occupants that can be legally carried",
+    "UnitOfMeasure": ""
+  },
+  {
+    "Name": "Series",
+    "Description": "The series of a vehicle model as specified by a manufacturer e.g. VY Commodore, FG Falcon",
+    "UnitOfMeasure": ""
+  },
+  {
+    "Name": "Steering",
+    "Description": "The Steering description of the vehicle Eg 4 Wheel Steering, Rack and Pinion",
+    "UnitOfMeasure": ""
+  },
+  {
+    "Name": "TareMass",
+    "Description": "The weight of the vehicle with standard equipment unoccupied and unladen with all fluid reservoirs full except for fuel, which is 10 litres only (kg)",
+    "UnitOfMeasure": "kg"
+  },
+  {
+    "Name": "TowingBrakes",
+    "Description": "Towing capacity - with brakes (kg)",
+    "UnitOfMeasure": "kg"
+  },
+  {
+    "Name": "TowingNoBrakes",
+    "Description": "Towing capacity - without brakes (kg)",
+    "UnitOfMeasure": "kg"
+  },
+  {
+    "Name": "ValvesCylinder",
+    "Description": "Number of valves per cylinder",
+    "UnitOfMeasure": ""
+  },
+  {
+    "Name": "VehicleHeight",
+    "Description": "Height of a vehicle at its highest point, measured from the ground with standard tyres fitted - typically meausured in millimetres.",
+    "UnitOfMeasure": "mm"
+  },
+  {
+    "Name": "VehicleLength",
+    "Description": "Length of a vehicle at its longest point, measured from bumper to bumper and typically referred to in millimetres.",
+    "UnitOfMeasure": "mm"
+  },
+  {
+    "Name": "VehicleType",
+    "Description": "Type of vehicle Eg PS-Passenger vehicle, LC-Light commercial, SV-SUV, HC-Heavy Commercial",
+    "UnitOfMeasure": ""
+  },
+  {
+    "Name": "VehicleWidth",
+    "Description": "Width of a vehicle measured at its widest point, typically referred to in millimetres.",
+    "UnitOfMeasure": "mm"
+  },
+  {
+    "Name": "VFactsClass",
+    "Description": "The VFacts Class",
+    "UnitOfMeasure": ""
+  },
+  {
+    "Name": "VFactsPrice",
+    "Description": "The VFacts Pricing Segment",
+    "UnitOfMeasure": ""
+  },
+  {
+    "Name": "VFactsSegment",
+    "Description": "The VFacts Segment",
+    "UnitOfMeasure": ""
+  },
+  {
+    "Name": "VIN",
+    "Description": "Sample of the Vehicle Identification Number.",
+    "UnitOfMeasure": ""
+  },
+  {
+    "Name": "WarrantyKM",
+    "Description": "The number of km the warranty covers (-1 = Unlimited)",
+    "UnitOfMeasure": "km"
+  },
+  {
+    "Name": "WarrantyYears",
+    "Description": "The number of years on the car warranty",
+    "UnitOfMeasure": "yr"
+  },
+  {
+    "Name": "Wheelbase",
+    "Description": "The distance between the centers of the front and rear wheels (mm)",
+    "UnitOfMeasure": "mm"
+  },
+  {
+    "Name": "WheelbaseConfiguration",
+    "Description": "The Wheel Base configuration of the vehicle, ie: LWB, SWB etc",
+    "UnitOfMeasure": ""
+  },
+  {
+    "Name": "LoadSpaceMin",
+    "Description": "",
+    "UnitOfMeasure": "L"
+  },
+  {
+    "Name": "LoadSpaceMax",
+    "Description": "",
+    "UnitOfMeasure": "L"
+  },
+  {
+    "Name": "LaunchYear",
+    "Description": "",
+    "UnitOfMeasure": ""
+  },
+  {
+    "Name": "LaunchMonth",
+    "Description": "",
+    "UnitOfMeasure": ""
+  },
+  {
+    "Name": "ANCAPYear",
+    "Description": "",
+    "UnitOfMeasure": ""
+  }
+]
