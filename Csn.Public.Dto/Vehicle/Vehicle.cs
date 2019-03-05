@@ -20,12 +20,14 @@ namespace Csn.Public.Dto
         /* Type = [Car, Bike, Boat, Truck, Caravan, Construction, Agriculture] */
         public string Type { get; set; }
 
+        /* unique identifier of the vehicle */
         public Guid Identifier { get; set; }
 
         /* 
-            ListingType = [Showroom, New, Demo, Used]
+            ListingType = [Showroom, New, Used]
 
-            "New" means the item is in-stock. 
+            "New" means the item is in-stock, and does not have a previous owner
+            "Used" means the item is registered or has had a previous owner 
         */
         public string ListingType { get; set; }
 
@@ -35,7 +37,8 @@ namespace Csn.Public.Dto
         /* SaleType = [Sale, Share, Rent, Auction] */
         public string SaleType { get; set; }
 
-        public string Comment { get; set; }
+        /* The comments, or description of the vehicle */
+        public string Description { get; set; }
 
         public Registration Registration { get; set; }
 
