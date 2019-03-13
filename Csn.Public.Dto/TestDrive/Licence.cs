@@ -24,16 +24,7 @@ namespace Csn.Public.Dto
     {
         // Using Victorian Licence Conditions as Sample: 
         // A - automatic transmission
-        // B - synchromesh transmission - heavy vehicle only
-        // E - LAMS restriction, no pillion passenger and zero BAC
-        // I - ignition interlock device
-        // N - automatic transmission(motorcycle)
-        // P - passenger restriction
-        // S - glasses or corrective lenses
-        // V - driver aids or vehicle modifications
-        // X - any condition or restriction VicRoads has advised you of in writing
         // Z - zero blood alcohol limit
-
         public Guid Identifier { get; set; }
         public string Condition { get; set; }
         public string Description { get; set; }

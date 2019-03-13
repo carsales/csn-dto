@@ -4,8 +4,6 @@ namespace Csn.Public.Dto
 {
     public class Infringement
     {
-        public Guid Identifier { get; set; }
-        public Guid? TestDriveIdentifier { get; set; }
         public string InfringementNumber { get; set; }
         public double InfringementPenalty { get; set; }
         public DateTime InfringementDueUtc { get; set; }

@@ -12,6 +12,7 @@ namespace Csn.Public.Dto
         public DateTime StartUtc { get; set; }
         public DateTime EndUtc { get; set; }
         public List<GeoTracking> GeoLocations { get; set; }
+        public List<Infringement> Infringements { get; set; }
     }
 
     public class GeoTracking
