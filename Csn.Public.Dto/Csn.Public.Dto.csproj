@@ -4,7 +4,7 @@
     <TargetFramework>netcoreapp2.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>carsales.com Limited</Authors>
-    <PackageLicenseUrl>https://raw.githubusercontent.com/carsales/csn-dto/master/LICENSE</PackageLicenseUrl>
+    <PackageLicenseUrl></PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/carsales/csn-dto</PackageProjectUrl>
     <RepositoryUrl>https://github.com/carsales/csn-dto</RepositoryUrl>
 
@@ -15,6 +15,7 @@
     <Title>Csn.Public.Dto</Title>
     <PackageId>Csn.Public.Dto</PackageId>
     <PackageTags>carsales lead inventory</PackageTags>
+    <PackageLicenseExpression>CC-BY-ND-4.0</PackageLicenseExpression>
 
   </PropertyGroup>
 
