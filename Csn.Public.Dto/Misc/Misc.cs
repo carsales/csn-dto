@@ -1,4 +1,6 @@
-﻿namespace Csn.Public.Dto
+﻿using System;
+
+namespace Csn.Public.Dto
 {
     public class NameValue
     {
@@ -63,5 +65,16 @@
         /* ISO monetary units: Currency = [USD, AUD, EUR] */
         public string Currency { get; set; }
         public double? Amount { get; set; }
+    }
+
+    public class OdometerReading
+    {
+        /* Type = [Chassis, Hub, Engine, Engine_1, Engine_2] */
+        public string Type { get; set; }
+        public DateTime? Date { get; set; }
+        public double? Value { get; set; }
+
+        /* UnitOfMeasure = [Km, Hour, Miles] */
+        public string UnitOfMeasure { get; set; }
     }
 }
