@@ -67,16 +67,8 @@ namespace Csn.Public.Dto
         public List<Price> PriceList { get; set; }
         public List<NameValue> ExtendedProperties { get; set; }
         public List<TypeName> Certifications { get; set; }
-    }
 
-    public class OdometerReading
-    {
-        /* Type = [Chassis, Hub, Engine, Engine_1, Engine_2] */
-        public string Type { get; set; }
-        public DateTime? Date { get; set; }
-        public double? Value { get; set; }
-
-        /* UnitOfMeasure = [Km, Hour, Miles] */
-        public string UnitOfMeasure { get; set; }
+        /* only use UTC time */
+        public DateTime LastModifiedUtc { get; set; }
     }
 }
