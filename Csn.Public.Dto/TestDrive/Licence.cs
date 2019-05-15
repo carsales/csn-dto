@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Csn.Public.Dto.Misc;
+using System;
 using System.Collections.Generic;
 
 namespace Csn.Public.Dto
@@ -17,7 +18,14 @@ namespace Csn.Public.Dto
         /* CAR, LEARNER, MOTORCYCLE etc. */
         public string LicenceType { get; set; }
         public List<LicenceCondition> LicenceConditions { get; set; }
+        public List<LicenceImage> LicenceImages { get; set; }
         public string LicenceSignatureImageUrl { get; set; }
+    }
+
+    public class LicenceImage
+    {
+        public ImageSide ImageSide { get; set; }
+        public string ImageUrl { get; set; }
     }
 
     public class LicenceCondition
