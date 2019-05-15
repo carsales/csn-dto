@@ -15,7 +15,7 @@
     <Title>Csn.Public.Dto</Title>
     <PackageId>Csn.Public.Dto</PackageId>
     <PackageTags>carsales lead inventory</PackageTags>
-    <PackageLicenseExpression>CC-BY-ND-4.0</PackageLicenseExpression>
+    <PackageLicenseExpression>CC-BY-SA-4.0</PackageLicenseExpression>
 
   </PropertyGroup>
 
