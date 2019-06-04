@@ -65,6 +65,8 @@ namespace Csn.Public.Dto
         /* ISO monetary units: Currency = [USD, AUD, EUR] */
         public string Currency { get; set; }
         public double? Amount { get; set; }
+        public double? PreviousAmount { get; set; }
+        public DateTime? Modified { get; set; }
     }
 
     public class OdometerReading
