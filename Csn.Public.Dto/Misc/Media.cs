@@ -10,26 +10,27 @@ namespace Csn.Public.Dto
         public List<Link> Links { get; set; }
     }
 
-    public class Photo
-    {
-        public Guid? Identifier { get; set; }
-        public string Type { get; set; }
-        public string Url { get; set; }
-        public string Caption { get; set; }
-        public string Angle { get; set; }
-        public DateTime? LastModifiedUtc { get; set; }
-    }
-
-    public class Video
+    public class MediaItem
     {
         public Guid? Identifier { get; set; }
         public string Type { get; set; }
         public string Url { get; set; }
         public string ThumbUrl { get; set; }
+        public string Caption { get; set; }
+        public DateTime? LastModifiedUtc { get; set; }
+    }
+
+    public class Photo : MediaItem
+    {
+        public string Angle { get; set; }
+    }
+
+    public class Video : MediaItem
+    {
         public List<VideoEncoding> Encodings { get; set; }
     }
 
-    public class VideoEncoding
+    public class VideoEncoding 
     {
         public string Name { get; set; }
         public string Url { get; set; }
@@ -37,16 +38,9 @@ namespace Csn.Public.Dto
         public int? Height { get; set; }
     }
 
-    public class Link
+    public class Link : MediaItem
     {
-        public Guid? Identifier { get; set; }
-        public string Type { get; set; }
-
         public string Name { get; set; }
-
-        public string Caption { get; set; }
-        public string Url { get; set; }
-        public string ThumbUrl { get; set; }
         public DateTime ExpiryDateUtc { get; set; }
         public DateTime IssueDateUtc { get; set; }
     }
