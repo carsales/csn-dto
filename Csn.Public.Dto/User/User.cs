@@ -19,12 +19,28 @@ namespace Csn.Public.Dto
         public string Position { get; set; }
         public string Country { get; set; }
         public string ImageUrl { get; set; }
-        public List<ApplicationClaims> ApplicationClaims { get; set; }
+        public List<ApplicationRole> ApplicationRoles { get; set; }
     }
 
-    public class ApplicationClaims
+    public class ApplicationRole
     {
-        public string ApplicationName { get; set; }
-        public List<string> Claims { get; set; }
+        public Application Application { get; set; }
+        public Role Role { get; set; }
+        public CustomerItem Customer { get; set; }
+    }
+
+    public class Application
+    {
+        public string Name { get; set; }
+    }
+
+    public class Role
+    {
+        public string Name { get; set; }
+    }
+
+    public class CustomerItem
+    {
+        public Guid Identifier { get; set; }
     }
 }
