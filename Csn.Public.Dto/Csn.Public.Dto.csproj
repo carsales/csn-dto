@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>netcoreapp2.0;netstandard1.6;net45</TargetFrameworks>
+    <TargetFrameworks>netcoreapp2.0;netstandard1.6</TargetFrameworks>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>carsales.com Limited</Authors>
     <PackageLicenseUrl></PackageLicenseUrl>
