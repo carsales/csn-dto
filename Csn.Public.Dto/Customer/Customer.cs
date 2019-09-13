@@ -18,7 +18,12 @@ namespace Csn.Public.Dto
         public List<Address> Addresses { get; set; }
         public List<PhoneNumber> PhoneNumbers { get; set; }
 
-        /* Identification = [ABN, LMCT, ACN etc] */
+        /*
+            Identification = [ABN, LMCT, ACN etc]
+        
+            Can be anything here, but utilise known abbreviations relevant to the country 
+            or residence. e.g. DNI or CUIT for Argentina.
+        */
         public List<TypeValue> Identification { get; set; }
         public List<Location> Locations { get; set; }
         public GeoLocation GeoLocation { get; set; }
@@ -34,6 +39,9 @@ namespace Csn.Public.Dto
         public List<TypeValue> Subscriptions { get; set; }
         public List<Period> OperatingHours { get; set; }
         public List<NameValue> Configuration { get; set; }
+
+        /* [Active, Pending, Suspended, Inactive] */
+        public string Status { get; set; }
     }
 
     public class Contact
