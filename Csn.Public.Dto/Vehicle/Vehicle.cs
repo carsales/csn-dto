@@ -70,6 +70,6 @@ namespace Csn.Public.Dto
 
         /* only use UTC time */
         public DateTime LastModifiedUtc { get; set; }
-        public DateTime CreatedUtc { get; set; }
+        public DateTime? CreatedUtc { get; set; }
     }
 }

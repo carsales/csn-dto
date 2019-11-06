@@ -1,13 +1,10 @@
-<Project Sdk="Microsoft.NET.Sdk">
-
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFrameworks>netcoreapp2.0;netstandard2.0</TargetFrameworks>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>carsales.com Limited</Authors>
-    <PackageLicenseUrl></PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/carsales/csn-dto</PackageProjectUrl>
     <RepositoryUrl>https://github.com/carsales/csn-dto</RepositoryUrl>
-
     <Description>Basic set of data transfer objects (DTO) for use within the automotive industry for API enablement</Description>
     <Copyright>Copyright © carsales.com Limited 2018</Copyright>
     <Summary>Public data transfer objects for entities used within the automotive industry</Summary>
@@ -16,7 +13,5 @@
     <PackageId>Csn.Public.Dto</PackageId>
     <PackageTags>carsales lead inventory</PackageTags>
     <PackageLicenseExpression>CC-BY-SA-4.0</PackageLicenseExpression>
-
   </PropertyGroup>
-
 </Project>
