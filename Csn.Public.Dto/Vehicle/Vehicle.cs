@@ -31,7 +31,7 @@ namespace Csn.Public.Dto
         */
         public string ListingType { get; set; }
 
-        /* SaleStatus = [Available, WithDrawn, Sold] */ 
+        /* SaleStatus = [In Stock, WithDrawn, Sold] */ 
         public string SaleStatus { get; set; }
 
         /* SaleType = [Sale, Share, Rent, Auction] */
