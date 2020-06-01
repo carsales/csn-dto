@@ -35,5 +35,5 @@ dotnet build -c Release
 if [ "${1}" == "deploy" ]; then
   dotnet pack -c Release -o ${artifacts} /p:PackageVersion=${version} --no-dependencies
 
-  dotnet nuget push "${artifacts}/Simple*.nupkg" -s ${nuget_server} -k ${NUGET_AUTH_TOKEN}
+  dotnet nuget push "${artifacts}/*.nupkg" -s ${nuget_server} -k ${NUGET_AUTH_TOKEN}
 fi
