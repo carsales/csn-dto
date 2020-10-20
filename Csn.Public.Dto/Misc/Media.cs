@@ -18,6 +18,7 @@ namespace Csn.Public.Dto
         public string ThumbUrl { get; set; }
         public string Caption { get; set; }
         public DateTime? LastModifiedUtc { get; set; }
+        public int Order { get; set; }
     }
 
     public class Photo : MediaItem
