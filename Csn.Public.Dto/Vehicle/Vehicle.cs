@@ -63,7 +63,7 @@ namespace Csn.Public.Dto
         public Warranty Warranty { get; set; }
 
         public List<SimpleName> PublishingDestinations { get; set; }
-        public List<NameValue> Tags { get; set; }
+        public List<Tag> Tags { get; set; }
         public List<Price> PriceList { get; set; }
         public List<NameValue> ExtendedProperties { get; set; }
         public List<TypeName> Certifications { get; set; }

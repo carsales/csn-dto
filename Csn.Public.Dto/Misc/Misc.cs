@@ -79,4 +79,11 @@ namespace Csn.Public.Dto
         /* UnitOfMeasure = [Km, Hour, Miles] */
         public string UnitOfMeasure { get; set; }
     }
+
+    public class Tag
+    {
+        public string Service { get; set; }
+        public string Name { get; set; }
+        public string Value { get; set; }
+    }
 }
