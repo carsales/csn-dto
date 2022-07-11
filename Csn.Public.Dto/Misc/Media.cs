@@ -19,6 +19,7 @@ namespace Csn.Public.Dto
         public string Caption { get; set; }
         public DateTime? LastModifiedUtc { get; set; }
         public int Order { get; set; }
+        public List<Tag> Tags { get; set; }
     }
 
     public class Photo : MediaItem
